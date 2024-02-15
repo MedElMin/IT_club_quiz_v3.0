@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="It Club Quiz V 3.0"
-run/main_scene="res://answer.tscn"
+run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
