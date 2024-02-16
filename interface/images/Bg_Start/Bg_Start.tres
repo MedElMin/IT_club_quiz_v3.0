@@ -1,4 +1,4 @@
-[gd_resource type="AnimatedTexture" load_steps=19 format=3 uid="uid://c2eg8xisjq86i"]
+[gd_resource type="AnimatedTexture" load_steps=16 format=3 uid="uid://c2eg8xisjq86i"]
 
 [ext_resource type="Texture2D" uid="uid://do8d4mg2qb5en" path="res://interface/images/Bg_Start/0_000.png" id="1_xyjya"]
 [ext_resource type="Texture2D" uid="uid://p3443x3p387j" path="res://interface/images/Bg_Start/0_001.png" id="2_sk8b6"]
@@ -7,9 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://nmdfeii7g5dp" path="res://interface/images/Bg_Start/0_012.png" id="5_q8xyy"]
 [ext_resource type="Texture2D" uid="uid://cra8b1yw8577c" path="res://interface/images/Bg_Start/0_013.png" id="6_encpf"]
 [ext_resource type="Texture2D" uid="uid://c5ppg4hqwotxt" path="res://interface/images/Bg_Start/0_014.png" id="7_77t52"]
-[ext_resource type="Texture2D" uid="uid://dn7nx2686oqjs" path="res://interface/images/Bg_Start/0_015.png" id="8_fuy4b"]
-[ext_resource type="Texture2D" uid="uid://wj7lvn3teu23" path="res://interface/images/Bg_Start/0_016.png" id="9_c85pa"]
-[ext_resource type="Texture2D" uid="uid://demgwxhbjjx8q" path="res://interface/images/Bg_Start/0_017.png" id="10_neago"]
 [ext_resource type="Texture2D" uid="uid://nmyqmpwayay2" path="res://interface/images/Bg_Start/0_002.png" id="11_w513s"]
 [ext_resource type="Texture2D" uid="uid://clg4huox7uly1" path="res://interface/images/Bg_Start/0_003.png" id="12_b5s1s"]
 [ext_resource type="Texture2D" uid="uid://bncer4kgyvlps" path="res://interface/images/Bg_Start/0_004.png" id="13_1rcjg"]
@@ -20,8 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://cd5iq52si0uqy" path="res://interface/images/Bg_Start/0_009.png" id="18_u3ppn"]
 
 [resource]
-frames = 18
-speed_scale = 15.0
+frames = 15
+speed_scale = 13.0
 frame_0/texture = ExtResource("1_xyjya")
 frame_1/texture = ExtResource("2_sk8b6")
 frame_1/duration = 1.0
@@ -51,9 +48,3 @@ frame_13/texture = ExtResource("6_encpf")
 frame_13/duration = 1.0
 frame_14/texture = ExtResource("7_77t52")
 frame_14/duration = 1.0
-frame_15/texture = ExtResource("8_fuy4b")
-frame_15/duration = 1.0
-frame_16/texture = ExtResource("9_c85pa")
-frame_16/duration = 1.0
-frame_17/texture = ExtResource("10_neago")
-frame_17/duration = 1.0
