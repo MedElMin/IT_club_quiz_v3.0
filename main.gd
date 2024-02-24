@@ -23,6 +23,9 @@ var index_pool: Array
 # answer scenes
 var answers: Array[Node]
 var questions: Array
+# timer config
+var timer: Timer
+var time_per_question = 10
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -35,6 +38,10 @@ func _ready():
 		_:
 			print("invalid type: ", typeof(err), "\n", err)
 			get_tree().quit(1)
+	
+	# Load the timer and connect its signal
+	timer = $Progress_bar.get_node("Timer")
+	timer.timeout.connect(_on_timer_timeout)
 	
 	# initialize question pool
 	index_pool = Array(range(questions.size()))
@@ -69,11 +76,15 @@ func load_question_multiple_choice(question: String, choices: Dictionary, right_
 	$Question/Label.text = question
 	# integer index for the right answer
 	right_answer_index = option_to_index[right_answer]
+	
 	for i in range(min(answers.size(), choices.size())):
 		answers[i].answer_index = i
 		answers[i].set_answer(choices[index_to_option[i]])
 		if not answers[i].answer_chosen.is_connected(self._on_answer_chosen):
 			answers[i].answer_chosen.connect(self._on_answer_chosen)
+	
+	# Start the timer
+	timer.start(time_per_question)
 
 func load_json(filePath):
 	if FileAccess.file_exists(filePath):
@@ -100,3 +111,12 @@ func _on_answer_chosen(index):
 		
 		load_question_multiple_choice(question, choices, right_answer)
 	
+func _on_timer_timeout():
+	# pick 'n load the first question
+	question_index = pick_out_question()
+	
+	var choices = questions[question_index]["options"]
+	var right_answer = questions[question_index]["answer"]
+	var question = questions[question_index]["question"]
+	
+	load_question_multiple_choice(question, choices, right_answer)
