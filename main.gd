@@ -24,8 +24,13 @@ var index_pool: Array
 var answers: Array[Node]
 var questions: Array
 # timer config
+var progress_bar
 var timer: Timer
 var time_per_question = 10
+
+var camera
+
+var score
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -40,19 +45,24 @@ func _ready():
 			get_tree().quit(1)
 	
 	# Load the timer and connect its signal
-	timer = $Progress_bar.get_node("Timer")
+	progress_bar = $progress_bar
+	timer = progress_bar.get_node("Timer")
 	timer.timeout.connect(_on_timer_timeout)
 	
 	# initialize question pool
 	index_pool = Array(range(questions.size()))
 	
 	answers = $answers.get_children()
-	$Camera2D.make_current()
-	var center: Vector2 =  $Camera2D.get_screen_center_position()
-	var radius = 300
+
+	camera = $Camera2D
+	camera.make_current()
+	var center: Vector2 =  camera.get_screen_center_position()
+	var radius = 200
 	for i in range(answers.size()):
-		answers[i].position = radius *  Vector2(cos(2 * PI * (i as float / answers.size() as float)), sin(2 * PI * (i as float / answers.size() as float) ))
-	$Question.position = Vector2.ZERO
+		answers[i].position = center + radius *  Vector2(cos(2 * PI * (i as float / answers.size() as float)), sin(2 * PI * (i as float / answers.size() as float) ))
+	$Question.position = center
+	
+	score = $score
 	
 	# pick 'n load the first question
 	question_index = pick_out_question()

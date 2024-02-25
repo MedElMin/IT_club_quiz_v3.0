@@ -9,11 +9,18 @@ anchors_preset = 0
 [node name="Timer" type="Timer" parent="."]
 
 [node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
 offset_right = 293.0
 offset_bottom = 40.0
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0409556
+anchor_top = 2.325
+anchor_right = 0.0409556
+anchor_bottom = 2.325
 offset_left = 8.0
 offset_top = 4.0
 offset_right = 285.0
