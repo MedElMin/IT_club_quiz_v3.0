@@ -36,8 +36,10 @@ offset_right = -752.0
 offset_bottom = -480.0
 
 [node name="Question" parent="." instance=ExtResource("3_58kk8")]
-offset_right = 156.0
-offset_bottom = 86.0
+offset_left = -401.5
+offset_top = -280.5
+offset_right = -400.5
+offset_bottom = -279.5
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0

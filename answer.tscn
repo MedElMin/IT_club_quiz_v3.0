@@ -13,8 +13,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5gnwl")
 
-[node name="Button" type="Button" parent="."]
+[node name="AnswerText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-text = "Answer"
+offset_right = 246.0
+offset_bottom = 48.0
+bbcode_enabled = true
+text = "[center]Answer[/center]"
+
+[node name="Button" type="Button" parent="AnswerText"]
+layout_mode = 0
+offset_right = 136.0
+offset_bottom = 136.0

@@ -1,18 +1,31 @@
 extends Control
 
 signal answer_chosen(index)
-# var answer_text = "ANSWER"
+
 var answer_index = 0
+
+const default_size: Vector2 = Vector2(200, 100)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var button = $Button
-	button.text = "ANSWER"
+	
+	var button = $AnswerText/Button
+	
+	# overlay the question on top (this z_index is relative)
+	button.z_index = -1
+	
+	$AnswerText.size = default_size
+	
+	# resize the button to be the same size as the label
+	button.size = $AnswerText.size
+	
+	$AnswerText.bbcode_enabled = true
+	
 	button.pressed.connect(self._button_pressed)
 #	add_child(button)
 
 func set_answer(answer: String):
-	$Button.text = answer
+	$AnswerText.text = "[center]" + answer + "[/center]"
 
 func _button_pressed():
 	answer_chosen.emit(answer_index)

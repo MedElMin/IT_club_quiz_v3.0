@@ -56,11 +56,17 @@ func _ready():
 
 	camera = $Camera2D
 	camera.make_current()
+	
+	# Manually positioning UI elements
 	var center: Vector2 =  camera.get_screen_center_position()
-	var radius = 200
+	var radius = (center.y - $Question.size.y / 2) / 2 
+	# eccentricity or similar
+	var factor = 2.5
 	for i in range(answers.size()):
-		answers[i].position = center + radius *  Vector2(cos(2 * PI * (i as float / answers.size() as float)), sin(2 * PI * (i as float / answers.size() as float) ))
-	$Question.position = center
+		answers[i].position = - answers[i].size / 2 + center + radius *  Vector2(factor * cos(2 * PI * (i as float / answers.size() as float)), sin(2 * PI * (i as float / answers.size() as float) ))
+	
+	# Placing and centering the question box
+	$Question.position = center + (Vector2.UP * radius * 2) - ($Question.size / 2)
 	
 	score = $score
 	
@@ -83,7 +89,7 @@ func pick_out_question() -> int:
 # Load a question from some data
 func load_question_multiple_choice(question: String, choices: Dictionary, right_answer: String):
 	# TODO: Add question loading
-	$Question/Label.text = question
+	$Question.set_question_text(question)
 	# integer index for the right answer
 	right_answer_index = option_to_index[right_answer]
 	
@@ -112,6 +118,7 @@ func load_json(filePath):
 func _on_answer_chosen(index):
 	# compare the answer index and the question answer index
 	if index == right_answer_index:
+		
 		# pick 'n load the first question
 		question_index = pick_out_question()
 		
