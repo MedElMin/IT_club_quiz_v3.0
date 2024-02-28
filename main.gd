@@ -2,6 +2,10 @@ extends Node2D
 
 # const a = 65 + 32
 # var option_array := Array(range(26)).map(func (i): return char(i + a))
+
+const QUESTION_PATH := "res://content/question.json"
+const GAIN_PER_QUESTION := 10
+
 var option_to_index = {
 	"a": 0,
 	"b": 1,
@@ -14,7 +18,7 @@ var index_to_option = [
 	"c",
 	"d",
 ]
-const QUESTION_PATH := "res://content/question.json"
+
 var background_index = -1
 var question_index = -1
 var right_answer_index = -1
@@ -43,7 +47,7 @@ func _ready():
 		_:
 			print("invalid type: ", typeof(err), "\n", err)
 			get_tree().quit(1)
-	
+	print("number of questions: ", len(questions), "\nThe maximal score is: ", len(questions) * GAIN_PER_QUESTION)
 	# Load the timer and connect its signal
 	progress_bar = $progress_bar
 	timer = progress_bar.get_node("Timer")
@@ -115,9 +119,13 @@ func load_json(filePath):
 	else:
 		return ERR_FILE_NOT_FOUND
 
+func calculate_score(time_ratio: float):
+	return time_ratio * GAIN_PER_QUESTION
+	
 func _on_answer_chosen(index):
 	# compare the answer index and the question answer index
 	if index == right_answer_index:
+		$score.add_score(calculate_score(timer.time_left / timer.wait_time))
 		
 		# pick 'n load the first question
 		question_index = pick_out_question()
