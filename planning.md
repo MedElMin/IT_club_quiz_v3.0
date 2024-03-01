@@ -3,6 +3,11 @@ The quiz must be able to switch between different sets of questions and answers.
 # Main menu
 
 # Game over screen
+	[] On global timer timeout
+	[] On end of questions
+	On quit? (NO QUIT)
+	[] Hold on score
+	[] Credits
 
 # Question order
 
@@ -12,13 +17,17 @@ The quiz must be able to switch between different sets of questions and answers.
 	- Hotstreak
 	- Leaderboard
 	- Multiple choice questions
+	- Global timer
 
 # Quiz UI
 
-	- Background
-	- Question box
-	- Timer
-	- Leaderboard
+	[] Scaling with window size
+	[] Background
+		Use shaders?
+	[X] Question box
+	[] Centered questions
+	[X] Timer
+	[] Leaderboard
 
 ## Answers
 

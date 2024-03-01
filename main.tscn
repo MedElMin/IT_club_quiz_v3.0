@@ -1,13 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://b6g8jqkix0y00"]
+[gd_scene load_steps=7 format=3 uid="uid://b6g8jqkix0y00"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_v8uwb"]
 [ext_resource type="PackedScene" uid="uid://du0hdv67xpwt7" path="res://answer.tscn" id="2_07rsh"]
 [ext_resource type="PackedScene" uid="uid://c4wnrawbco6xe" path="res://question.tscn" id="3_58kk8"]
 [ext_resource type="PackedScene" uid="uid://kppi86mc1t1w" path="res://progress_bar.tscn" id="4_t0rg6"]
 [ext_resource type="PackedScene" uid="uid://yycqwv7hsnkk" path="res://score.tscn" id="5_reqsa"]
+[ext_resource type="PackedScene" uid="uid://dad6t8t5kt80p" path="res://background.tscn" id="6_84bvt"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_v8uwb")
+
+[node name="Background" parent="." instance=ExtResource("6_84bvt")]
 
 [node name="answers" type="Node" parent="."]
 

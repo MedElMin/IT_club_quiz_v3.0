@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dad6t8t5kt80p"]
+
+[ext_resource type="SpriteFrames" uid="uid://bso8ijlbym1wu" path="res://assets/00_000/quiz_bg.tres" id="1_p2awv"]
+[ext_resource type="Script" path="res://Background.gd" id="2_x0qe7"]
+
+[node name="Background" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_p2awv")
+animation = &"Quiz background"
+frame_progress = 0.251301
+script = ExtResource("2_x0qe7")
