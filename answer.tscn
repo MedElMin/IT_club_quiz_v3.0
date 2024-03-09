@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://du0hdv67xpwt7"]
 
 [ext_resource type="Script" path="res://answer.gd" id="1_5gnwl"]
-[ext_resource type="Texture2D" uid="uid://c7uec1gtassaf" path="res://assets/button.svg" id="2_14w4e"]
+[ext_resource type="Texture2D" uid="uid://c7uec1gtassaf" path="res://assets/button.svg" id="2_oo81v"]
 
 [node name="Answer" type="Control"]
 layout_mode = 3
@@ -25,9 +25,10 @@ text = "[center]Answer[/center]"
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("2_14w4e")
+texture = ExtResource("2_oo81v")
 
 [node name="Button" type="Button" parent="AnswerText"]
 layout_mode = 0
 offset_right = 802.0
 offset_bottom = 1131.0
+flat = true

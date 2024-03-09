@@ -1,5 +1,12 @@
 The quiz must be able to switch between different sets of questions and answers.
 
+Make a menu
+finalize game over (credit Vecteezy.com)
+finalize submissions (test the logic)
+Replace ui elements
+center the questions and place the submit button in a reasonable spot (find an ideal resolution)
+Load the new questions
+
 # Main menu
 
 # Game over screen

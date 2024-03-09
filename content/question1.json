@@ -1,0 +1,345 @@
+{
+    "questions": [
+      {
+        "question": "What does CPU stand for?",
+        "options": {
+          "a": "Computer Processing Unit",
+          "b": "Central Processing Unit",
+          "c": "Central Power Unit",
+          "d": "Computer Power Unit"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "Which programming language is used for building Android apps?",
+        "options": {
+          "a": "Java",
+          "b": "Python",
+          "c": "C++",
+          "d": "Swift"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "What protocol is used for secure communication over a computer network?",
+        "options": {
+          "a": "TCP",
+          "b": "HTTP",
+          "c": "HTTPS",
+          "d": "UDP"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "What does HTML stand for?",
+        "options": {
+          "a": "Hyperlink Text Markup Language",
+          "b": "High Text Markup Language",
+          "c": "Hyper Transfer Markup Language",
+          "d": "HyperText Markup Language"
+        },
+        "answer": "d"
+      },
+      {
+        "question": "What is the primary function of a router in a network?",
+        "options": {
+          "a": "Connects multiple devices within a local network",
+          "b": "Determines the best path for data packets to travel between networks",
+          "c": "Provides wireless access to the internet",
+          "d": "Controls access to websites"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "Which of the following is a relational database management system?",
+        "options": {
+          "a": "MongoDB",
+          "b": "MySQL",
+          "c": "Redis",
+          "d": "Cassandra"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "What is the purpose of CSS in web development?",
+        "options": {
+          "a": "Server-side scripting",
+          "b": "Database management",
+          "c": "Styling web pages",
+          "d": "Handling user interactions"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "What does URL stand for?",
+        "options": {
+          "a": "Universal Resource Locator",
+          "b": "Uniform Resource Locator",
+          "c": "Universal Resource Link",
+          "d": "Uniform Resource Link"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "Which of the following is not a programming language?",
+        "options": {
+          "a": "SQL",
+          "b": "HTML",
+          "c": "JSON",
+          "d": "XML"
+        },
+        "answer": ["b", "c", "d"]
+      },
+      {
+        "question": "What does LAN stand for?",
+        "options": {
+          "a": "Large Area Network",
+          "b": "Local Area Network",
+          "c": "Low-level Access Network",
+          "d": "Long-range Area Network"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "What is the purpose of the 'git' command in software development?",
+        "options": {
+          "a": "Sending emails",
+          "b": "Version control",
+          "c": "File compression",
+          "d": "Encryption"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "Which of the following is a markup language used for structuring and presenting content on the web?",
+        "options": {
+          "a": "XML",
+          "b": "HTML",
+          "c": "JSON",
+          "d": "CSS"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "What does IoT stand for?",
+        "options": {
+          "a": "Internet of Technology",
+          "b": "Internet of Telecommunications",
+          "c": "Internet of Things",
+          "d": "Internet of Thinking"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "Which programming language is often used for data analysis and scientific computing?",
+        "options": {
+          "a": "Java",
+          "b": "Python",
+          "c": "C#",
+          "d": "Ruby"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "What does SSL stand for?",
+        "options": {
+          "a": "Secure Socket Layer",
+          "b": "System Security Language",
+          "c": "Secure Server Link",
+          "d": "Simple Service Locator"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "Which of the following is a type of cyberattack that involves tricking individuals into revealing sensitive information?",
+        "options": {
+          "a": "DDoS",
+          "b": "Malware",
+          "c": "Phishing",
+          "d": "SQL Injection"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "What does SQL stand for?",
+        "options": {
+          "a": "Structured Query Language",
+          "b": "Sequential Query Language",
+          "c": "Standard Query Level",
+          "d": "Simplified Question Language"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "What does CSS stand for?",
+        "options": {
+          "a": "Cascading Scripting Style",
+          "b": "Computer Style Sheet",
+          "c": "Cascading Style Sheets",
+          "d": "Central Style System"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "Which of the following is a widely used JavaScript library for building user interfaces?",
+        "options": {
+          "a": "Angular",
+          "b": "React",
+          "c": "Vue.js",
+          "d": "Ember.js"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "What does API stand for?",
+        "options": {
+          "a": "Application Programming Interface",
+          "b": "Advanced Programming Interface",
+          "c": "Automated Protocol Interface",
+          "d": "Application Process Integration"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "Which programming language is commonly used for statistical computing and graphics?",
+        "options": {
+          "a": "R",
+          "b": "Swift",
+          "c": "Perl",
+          "d": "Kotlin"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "What is the purpose of a firewall in network security?",
+        "options": {
+          "a": "Prevent unauthorized access to or from a private network",
+          "b": "Enhance internet speed",
+          "c": "Encrypt network traffic",
+          "d": "Manage network hardware"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "Which of the following is a markup language used for structuring",
+        "options": {
+          "a": "JSON",
+          "b": "XML",
+          "c": "YAML",
+          "d": "HTML"
+        },
+        "answer": ["b", "a"]
+      },
+      {
+        "question": "Which of the following is a popular content management system (CMS)?",
+        "options": {
+          "a": "Drupal",
+          "b": "WordPress",
+          "c": "Magento",
+          "d": "Joomla"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "What is the purpose of DNS in networking?",
+        "options": {
+          "a": "Determine the location of websites based on IP addresses",
+          "b": "Encrypt data transmitted over the internet",
+          "c": "Control access to network resources",
+          "d": "Manage network security"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "What does SMTP stand for?",
+        "options": {
+          "a": "Simple Mail Transfer Protocol",
+          "b": "Secure Mail Transfer Protocol",
+          "c": "System Mail Transfer Protocol",
+          "d": "Standard Mail Transfer Procedure"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "Which programming language is primarily used for building iOS apps?",
+        "options": {
+          "a": "Java",
+          "b": "Swift",
+          "c": "Objective-C",
+          "d": "Kotlin"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "What does HTTP stand for?",
+        "options": {
+          "a": "Hypertext Transfer Protocol",
+          "b": "High Text Transfer Protocol",
+          "c": "Hypertext Transmission Protocol",
+          "d": "High Text Transmission Protocol"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "What does CMS stand for in the context of web development?",
+        "options": {
+          "a": "Centralized Management System",
+          "b": "Content Management System",
+          "c": "Code Management System",
+          "d": "Customer Management System"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "Which of the following is a popular version control system?",
+        "options": {
+          "a": "CVS",
+          "b": "SVN",
+          "c": "Git",
+          "d": "Mercurial"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "What is the purpose of a CDN in web hosting?",
+        "options": {
+          "a": "Content Distribution Network",
+          "b": "Centralized Data Network",
+          "c": "Customer Delivery Network",
+          "d": "Cloud Development Network"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "What is the purpose of a compiler in programming?",
+        "options": {
+          "a": "Convert source code into machine code",
+          "b": "Manage databases",
+          "c": "Test software applications",
+          "d": "Debug code"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "What does XML stand for?",
+        "options": {
+          "a": "Extensible Markup Language",
+          "b": "Extra Markup Language",
+          "c": "Expressive Markup Language",
+          "d": "Exotic Markup Language"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "Which of the following is not a type of cyberattack?",
+        "options": {
+          "a": "SQL Injection",
+          "b": "XSS (Cross-Site Scripting)",
+          "c": "LOL (Lots of Laughs)",
+          "d": "DDoS"
+        },
+        "answer": "c"
+      }
+    ]
+  }
+  

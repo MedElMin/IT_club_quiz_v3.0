@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://8ldpvoqm6njr"]
+
+[ext_resource type="Script" path="res://Menu.gd" id="1_8k810"]
+[ext_resource type="PackedScene" uid="uid://dad6t8t5kt80p" path="res://background.tscn" id="1_kycip"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_8k810")
+
+[node name="Background" parent="." instance=ExtResource("1_kycip")]
+animation = &"Menu"
+frame_progress = 0.899854
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
