@@ -1,18 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://du0hdv67xpwt7"]
+[gd_scene load_steps=3 format=3 uid="uid://dcj1w7j321bj2"]
 
-[ext_resource type="Script" path="res://answer.gd" id="1_5gnwl"]
-[ext_resource type="Texture2D" uid="uid://c7uec1gtassaf" path="res://assets/button.svg" id="2_oo81v"]
+[ext_resource type="Script" path="res://submit.gd" id="1_q0w3l"]
+[ext_resource type="Texture2D" uid="uid://c7uec1gtassaf" path="res://assets/button.svg" id="2_k1o6j"]
 
-[node name="Answer" type="Control"]
+[node name="Submit" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1152.0
-offset_bottom = -648.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_5gnwl")
+script = ExtResource("1_q0w3l")
 
 [node name="AnswerText" type="RichTextLabel" parent="."]
 layout_mode = 0
@@ -25,7 +23,7 @@ text = "[center]Answer[/center]"
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("2_oo81v")
+texture = ExtResource("2_k1o6j")
 
 [node name="Button" type="Button" parent="AnswerText"]
 layout_mode = 0

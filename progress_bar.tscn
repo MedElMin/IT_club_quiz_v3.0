@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://kppi86mc1t1w"]
+
+[ext_resource type="Script" path="res://progress_bar.gd" id="1_ujv8w"]
+
+[node name="Progress_bar" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 293.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0409556
+anchor_top = 2.325
+anchor_right = 0.0409556
+anchor_bottom = 2.325
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 285.0
+offset_bottom = 36.0
+color = Color(0.945098, 0.309804, 1, 1)
+script = ExtResource("1_ujv8w")
+metadata/_edit_use_anchors_ = true

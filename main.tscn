@@ -1,3 +1,63 @@
-[gd_scene format=3 uid="uid://b6g8jqkix0y00"]
+[gd_scene load_steps=8 format=3 uid="uid://b6g8jqkix0y00"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_v8uwb"]
+[ext_resource type="PackedScene" uid="uid://du0hdv67xpwt7" path="res://answer.tscn" id="2_07rsh"]
+[ext_resource type="PackedScene" uid="uid://c4wnrawbco6xe" path="res://question.tscn" id="3_58kk8"]
+[ext_resource type="PackedScene" uid="uid://kppi86mc1t1w" path="res://progress_bar.tscn" id="4_t0rg6"]
+[ext_resource type="PackedScene" uid="uid://yycqwv7hsnkk" path="res://score.tscn" id="5_reqsa"]
+[ext_resource type="PackedScene" uid="uid://dad6t8t5kt80p" path="res://background.tscn" id="6_84bvt"]
+[ext_resource type="PackedScene" uid="uid://dcj1w7j321bj2" path="res://submit.tscn" id="7_qbnr7"]
 
 [node name="main" type="Node2D"]
+script = ExtResource("1_v8uwb")
+
+[node name="Background" parent="." instance=ExtResource("6_84bvt")]
+
+[node name="answers" type="Node" parent="."]
+
+[node name="Answer" parent="answers" instance=ExtResource("2_07rsh")]
+offset_left = 72.0
+offset_top = 168.0
+offset_right = -1080.0
+offset_bottom = -480.0
+
+[node name="Answer2" parent="answers" instance=ExtResource("2_07rsh")]
+offset_left = 724.0
+offset_top = 416.0
+offset_right = -428.0
+offset_bottom = -232.0
+
+[node name="Answer3" parent="answers" instance=ExtResource("2_07rsh")]
+offset_left = 176.0
+offset_top = 432.0
+offset_right = -976.0
+offset_bottom = -216.0
+
+[node name="Answer4" parent="answers" instance=ExtResource("2_07rsh")]
+offset_left = 400.0
+offset_top = 168.0
+offset_right = -752.0
+offset_bottom = -480.0
+
+[node name="Question" parent="." instance=ExtResource("3_58kk8")]
+offset_left = -401.5
+offset_top = -280.5
+offset_right = -400.5
+offset_bottom = -279.5
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="progress_bar" parent="." instance=ExtResource("4_t0rg6")]
+offset_left = 277.0
+offset_top = 272.0
+offset_right = 277.0
+offset_bottom = 272.0
+
+[node name="score" parent="." instance=ExtResource("5_reqsa")]
+offset_left = 515.0
+offset_top = 307.0
+offset_right = 515.0
+offset_bottom = 307.0
+
+[node name="Submit" parent="." instance=ExtResource("7_qbnr7")]
