@@ -161,7 +161,8 @@ func load_json(filePath):
 		return ERR_FILE_NOT_FOUND
 
 func calculate_score(time_ratio: float):
-	return time_ratio * GAIN_PER_QUESTION
+	# return time_ratio * GAIN_PER_QUESTION
+	return GAIN_PER_QUESTION
 	
 func _on_answer_submitted():
 	selected_answer_indices.sort() 
