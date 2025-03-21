@@ -1,15 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2qbca3ooj1ef"]
+[gd_scene format=3 uid="uid://d2qbca3ooj1ef"]
 
-[ext_resource type="Script" path="res://gameover.gd" id="1_m3mxd"]
-[ext_resource type="PackedScene" uid="uid://dad6t8t5kt80p" path="res://background.tscn" id="2_3sjft"]
-
-[node name="gameover" type="Node2D"]
-script = ExtResource("1_m3mxd")
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Background" parent="." instance=ExtResource("2_3sjft")]
-
-[node name="Camera2D" type="Camera2D" parent="."]
+layout_mode = 0
+offset_right = 217.0
+offset_bottom = 67.0
+text = "
+Final Score:"

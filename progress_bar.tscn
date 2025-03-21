@@ -25,6 +25,6 @@ offset_left = 8.0
 offset_top = 4.0
 offset_right = 285.0
 offset_bottom = 36.0
-color = Color(0.945098, 0.309804, 1, 1)
+color = Color(0.129781, 0.754052, 0.494672, 1)
 script = ExtResource("1_ujv8w")
 metadata/_edit_use_anchors_ = true

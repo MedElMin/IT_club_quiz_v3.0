@@ -100,7 +100,7 @@ func _ready():
 		view_port = get_viewport()
 	
 	$Background.scale = view_port.get_visible_rect().size / bg_size
-	$Background.position += bg_size * $Background.scale / 2
+	#$Background.position += bg_size * $Background.scale / 2
 	$Background.play() 
 
 	# TODO: Send confirmation message
@@ -111,9 +111,8 @@ func _ready():
  
 func pick_out_question() -> int:
 	if index_pool.size() == 0:
+		print(score.get_score())
 		game_over()
-
-	
 	var pick = randi() % index_pool.size()
 	var index = index_pool[pick]
 	index_pool[pick] = index_pool[index_pool.size() - 1]
@@ -201,7 +200,7 @@ func game_over():
 	# it happens after already loading the main scene.
 	# get_tree().root.add_child(simultaneous_scene)
 	print(score.get_score())
-	simultaneous_scene.set_score(score.get_score())
+	#simultaneous_scene.set_score(score.get_score())
 	var node = get_tree().root
 	node.replace_by(simultaneous_scene)
 

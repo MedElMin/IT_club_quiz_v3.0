@@ -1,6 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://yycqwv7hsnkk"]
+[gd_scene load_steps=3 format=3 uid="uid://yycqwv7hsnkk"]
 
 [ext_resource type="Script" path="res://Score.gd" id="1_cxswe"]
+
+[sub_resource type="FontFile" id="FontFile_3bp0k"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -13,5 +28,11 @@ script = ExtResource("1_cxswe")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 201.0
+offset_bottom = 51.0
+theme_override_colors/default_color = Color(0, 0.560784, 0, 1)
+theme_override_colors/font_outline_color = Color(0.0431373, 0.615686, 0.360784, 1)
+theme_override_fonts/normal_font = SubResource("FontFile_3bp0k")
+theme_override_font_sizes/normal_font_size = 30
+text = "Score:"
+tab_size = 11

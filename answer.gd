@@ -3,7 +3,7 @@ extends Control
 signal answer_chosen(index)
 
 var answer_index = 0
-var button
+@onready var button
 const default_size: Vector2 = Vector2(300, 100)
 
 # Called when the node enters the scene tree for the first time.

@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dcj1w7j321bj2"]
+[gd_scene load_steps=5 format=3 uid="uid://dcj1w7j321bj2"]
 
 [ext_resource type="Script" path="res://submit.gd" id="1_q0w3l"]
-[ext_resource type="Texture2D" uid="uid://c7uec1gtassaf" path="res://assets/button.svg" id="2_k1o6j"]
+[ext_resource type="FontFile" uid="uid://0qavf508x71p" path="res://assets/Green Leaf.otf" id="2_3loya"]
+
+[sub_resource type="Gradient" id="Gradient_u83ae"]
+colors = PackedColorArray(0, 0.87451, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fyq7m"]
+gradient = SubResource("Gradient_u83ae")
 
 [node name="Submit" type="Control"]
 layout_mode = 3
@@ -12,10 +18,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_q0w3l")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 277.0
+offset_bottom = 68.0
+texture = SubResource("GradientTexture1D_fyq7m")
+
 [node name="AnswerText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_right = 246.0
-offset_bottom = 48.0
+offset_right = 264.0
+offset_bottom = 53.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0.647059, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_3loya")
+theme_override_font_sizes/normal_font_size = 36
 bbcode_enabled = true
 text = "[center]Answer[/center]"
 
@@ -23,10 +39,22 @@ text = "[center]Answer[/center]"
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("2_k1o6j")
 
 [node name="Button" type="Button" parent="AnswerText"]
 layout_mode = 0
 offset_right = 802.0
 offset_bottom = 1131.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0.568627, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
 flat = true
